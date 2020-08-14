@@ -1,0 +1,188 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+.card-header1{
+    height: 50%;
+    width: 100%;
+    background-color: rgba(165, 78, 44, 0.767);
+    box-shadow: 1px 3px  5px gray;
+}
+#add{
+    background-color: rgb(214, 214, 214);
+}
+#add:active{
+background-color: rgb(116, 116, 230);
+animation: add 0.5s infinite;
+}
+/* .card-body{
+    background-color: rgb(228, 228, 228);
+    box-shadow: 1px 3px  5px gray;
+} */
+input{
+    border: 1px gray solid;
+    border-radius: 5%;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: none;
+   background-color: rgb(228, 228, 228);
+}
+button:focus{
+    outline: none;
+}
+
+.editbtn{
+  color: rgba(0, 0, 255, 0.596);
+  left: 58rem;
+  }
+  .deletebtn{
+     color: rgba(255, 0, 0, 0.568);
+     left: 48rem;
+  }
+  .spanlist{
+      position: absolute;
+      top: 0.3em;
+  }
+  .modalcontainer{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+.modal_over-lay{
+   animation-name: x;
+   animation-duration: 3s;
+}
+
+.closebtn{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+}
+.closebtn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.search-holder{
+    margin-left: 30rem !important;
+}
+
+@media(min-width:768px){
+    #hambug{
+        display: block;
+    }
+
+    .filterInput1{
+        margin-left: 1rem !important;
+    }
+    .search-holder{
+        margin-left: 0rem;
+    }
+
+    .listItem{
+        background-color: aquamarine;
+        width: 98% !important;
+        box-sizing: border-box;
+       padding-right: 15em;
+        position: relative;
+        margin-top: 5%;
+      display: flex;
+      height: 2.5em;
+     
+    }
+       .editbtn{
+        position: absolute;
+        left: 38em!important;
+        background-color: #fff;
+        }
+        .deletebtn{
+            position: absolute;
+        left: 40rem!important;
+           background-color: #fff;
+        }
+      .spanlist{
+          position: absolute;
+          top: 0.3em;
+      }
+}
+
+@media(max-width:480px){
+    #hambug{
+        display: block;
+    }
+
+    .filterInput1{
+        margin-left: 6rem !important;
+    }
+    .search-holder{
+        margin-left: 0rem !important;
+    }
+
+  } 
+  .editbtn{
+    
+    position: absolute;
+    left: 17.5em;
+    background-color: #fff;
+    }
+    .deletebtn{
+        position: absolute;
+    left: 19em;
+       background-color: #fff;
+    }
+    .spanlist{
+        position: absolute;
+        top: 0.3em;
+    }
+   
+
+
+@media(max-width:320px){
+    #hambug{
+        display: block;
+    }
+    .filterInput1{
+        margin-left: 6rem !important;
+    }
+    .search-holder{
+        margin-left: 0rem !important;
+    }
+
+    
+      .editbtn{
+    
+    position: absolute;
+    left: 15em;
+    background-color: #fff;
+    }
+    .deletebtn{
+        position: absolute;
+    left: 16.5em;
+       background-color: #fff;
+    }
+}
+
+
+
+
+
+@keyframes add{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+
+@keyframes x{
+    from {opacity: 0};
+    
+    to {opacity: 1}
+    }
+    
