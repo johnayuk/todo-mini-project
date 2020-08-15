@@ -13,7 +13,7 @@ body{
 }
 #add:active{
 background-color: rgb(116, 116, 230);
-animation: add 0.5s infinite;
+animation: add 0.5s;
 }
 /* .card-body{
     background-color: rgb(228, 228, 228);
